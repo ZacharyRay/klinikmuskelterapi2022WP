@@ -1,0 +1,19 @@
+// settings for global fonts
+
+$global-font: 'Raleway', sans-serif;
+$headings-font: 'Raleway', sans-serif;
+
+// font sizes
+
+@mixin a {
+    font-size: 2rem;
+    @include md {
+        font-size: 1.6rem;
+        font-size: 1vw;
+    }
+    @include lg {
+        font-size: 1.6rem;
+        font-size: 1vw;
+    }
+    
+}

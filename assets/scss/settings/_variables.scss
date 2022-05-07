@@ -1,0 +1,189 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $global-font;
+  color: $black;
+  font-style: normal;
+  font-size: 1.4rem;
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+  background-repeat: no-repeat;
+  background-position: 47% 68%;;
+}
+
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 300;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  line-height: 110%;
+  @include md {
+    font-family: $headings-font;
+  }
+}
+
+span.h1,
+span.h2,
+span.h3,
+span.h4,
+span.h5,
+span.h6 {
+  display: inline-block;
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+
+  @include lg {
+    font-size: 4.5rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem;
+  @include xxl {
+    font-size: 3.5rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 2.4rem;
+  @include lg {
+    font-size: 3.5rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 2.2rem;
+  @include lg {
+    font-size: 2.4rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 2rem;
+  @include lg {
+    font-size: 2rem;
+  }
+}
+
+h6,
+h6 {
+  font-size: 1.8rem;
+  @include lg {
+    font-size: 1.8rem;
+  }
+}
+
+
+a {
+  line-height: 18px;
+  font-size: 1.5rem;
+  @include md {
+    line-height: 4vh;
+    font-size: 1.3vw;
+  }
+}
+p {
+  line-height: 18px;
+  font-size: 1.5rem;
+  @include md {
+    line-height: 1.5;
+    font-size: 1.2vw;
+  }
+  @include lg {
+    font-size: 1vw;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  @include a;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 15px;
+  background: $primary;
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover {
+    background: lighten($primary, 15%);
+  }
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.firma_some {
+
+  a {
+    display: flex;
+    flex-direction: row;
+    line-height: 18px;
+    font-size: 1.5rem;
+    @include md {
+      line-height: 4vh;
+      font-size: 1.2vw;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+span {
+  line-height: 18px;
+  font-size: 1.5rem;
+  @include md {
+    line-height: 4vh;
+    font-size: 1.2vw;
+  }
+}
+
+.privatlivspolitik {
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+}
